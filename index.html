@@ -137,10 +137,11 @@
         }
 
         function blockUser() {
-            let blockDuration = 24 * 60 * 60 * 1000; 
+            let blockDuration = (Math.floor(Math.random() * 16) + 15) * 60 * 1000; 
             let blockExpires = new Date().getTime() + blockDuration;
             localStorage.setItem("blockUntil", blockExpires);
-            $("body").html("<h2 style='color:red; text-align:center; margin-top:50px;'>คุณถูกบล็อก 24 ชั่วโมง</h2>");
+            $("body").html("<h2 style='color:red; text-align:center; margin-top:50px;'>คุณถูกบล็อกชั่วคราว (15 นาที)</h2>");
+
         }
 
         if (isBlocked()) {
