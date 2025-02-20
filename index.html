@@ -84,7 +84,7 @@
     <div class="footer">
         <small>ชื่อบัญชี : กฤษณะ ว่านเครือ</small><br>
         <small>หมายเลขทรูมันนี่วอลเล็ต : 140000650021800</small><br>
-        <small id="fee">ค่าธรรมเนียม: 10.00 บาท</small><br>
+        <small id="fee">ค่าธรรมเนียม: 15.00 บาท</small><br>
         <small id="total">ยอดที่ต้องชำระ: 0.00 บาท</small>
     </div>
 </div>
@@ -98,7 +98,7 @@
 
         $('#amount').on('input', () => {
             let amount = $('#amount').val() ? Number($('#amount').val()) : 0;
-            let fee = 10;  
+            let fee = 15;  
             let total = amount + fee;
 
             $('#fee').text(`ค่าธรรมเนียม: ${fee.toLocaleString('th-TH', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} บาท`);
